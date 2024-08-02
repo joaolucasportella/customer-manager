@@ -19,6 +19,7 @@ namespace CustomerManagement
 
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             RegisterCustomer = new Button();
             label1 = new Label();
             FetchCustomer = new Button();
@@ -74,6 +75,7 @@ namespace CustomerManagement
             Controls.Add(label1);
             Controls.Add(RegisterCustomer);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Main";
             Text = "Gerenciador de Clientes";
             Load += MainLoad;
