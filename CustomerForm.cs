@@ -1,12 +1,14 @@
-﻿using ClosedXML.Excel;
-
-namespace CustomerManagement
+﻿namespace CustomerManagement
 {
     public partial class CustomerForm : Form
     {
+        private readonly Database database;
+
         public CustomerForm()
         {
             InitializeComponent();
+
+            this.database = new Database();
         }
 
         private void CustomerFormLoad(object sender, EventArgs e)
@@ -23,33 +25,18 @@ namespace CustomerManagement
         {
             try
             {
-                using (var workbook = new XLWorkbook(Constants.DataFilePath))
-                {
-                    var worksheet = workbook.Worksheet("Clientes");
-                    var lastRow = worksheet.LastRowUsed().RowNumber();
-                    var newRow = lastRow + 1;
-                    var customerId = lastRow - 1;
-
-                    worksheet.Cell(newRow, 1).Value = customerId;
-                    worksheet.Cell(newRow, 2).Value = nameInput.Text;
-                    worksheet.Cell(newRow, 3).Value = rgInput.Text;
-                    worksheet.Cell(newRow, 4).Value = cpfInput.Text;
-                    worksheet.Cell(newRow, 5).Value = birthDateInput.Value.ToShortDateString();
-                    worksheet.Cell(newRow, 6).Value = addressInput.Text;
-                    worksheet.Cell(newRow, 7).Value = cepInput.Text;
-                    worksheet.Cell(newRow, 8).Value = cityInput.Text;
-                    worksheet.Cell(newRow, 9).Value = emailInput.Text;
-                    worksheet.Cell(newRow, 10).Value = waInput.Text;
-                    worksheet.Cell(newRow, 11).Value = telInput.Text;
-
-                    workbook.Save();
-                }
-
-                MessageBox.Show("Cadastro feito com sucesso!");
-            }
-            catch (System.IO.IOException)
-            {
-                MessageBox.Show($"Erro ao tentar realizar o cadastro. Verifique se o arquivo {Constants.DataFilePath} não está aberto e tente novamente.");
+                this.database.InsertCustomer(
+                    name: nameInput.Text,
+                    rg: rgInput.Text,
+                    cpf: cpfInput.Text,
+                    address: addressInput.Text,
+                    cep: cepInput.Text,
+                    city: cityInput.Text,
+                    email: emailInput.Text,
+                    phone1: waInput.Text,
+                    phone2: telInput.Text,
+                    birthDate: birthDateInput.Text
+                );
             }
             catch (Exception ex)
             {
