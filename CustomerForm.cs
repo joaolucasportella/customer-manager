@@ -45,6 +45,7 @@
             finally
             {
                 this.ClearInputs();
+                MessageBox.Show("Cliente cadastrado com successo!");
             }
         }
 
