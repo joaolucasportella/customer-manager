@@ -450,6 +450,7 @@
             // anamneseNegativeInput2
             //
             anamneseNegativeInput2.AutoSize = true;
+            anamneseNegativeInput2.Checked = true;
             anamneseNegativeInput2.Location = new Point(60, 0);
             anamneseNegativeInput2.Name = "anamneseNegativeInput2";
             anamneseNegativeInput2.Size = new Size(47, 19);
@@ -465,7 +466,6 @@
             anamnesePositiveInput2.Name = "anamnesePositiveInput2";
             anamnesePositiveInput2.Size = new Size(45, 19);
             anamnesePositiveInput2.TabIndex = 32;
-            anamnesePositiveInput2.TabStop = true;
             anamnesePositiveInput2.Text = "Sim";
             anamnesePositiveInput2.UseVisualStyleBackColor = true;
             //
@@ -497,6 +497,7 @@
             // anamneseNegativeInput3
             //
             anamneseNegativeInput3.AutoSize = true;
+            anamneseNegativeInput3.Checked = true;
             anamneseNegativeInput3.Location = new Point(60, 0);
             anamneseNegativeInput3.Name = "anamneseNegativeInput3";
             anamneseNegativeInput3.Size = new Size(47, 19);
@@ -512,7 +513,6 @@
             anamnesePositiveInput3.Name = "anamnesePositiveInput3";
             anamnesePositiveInput3.Size = new Size(45, 19);
             anamnesePositiveInput3.TabIndex = 37;
-            anamnesePositiveInput3.TabStop = true;
             anamnesePositiveInput3.Text = "Sim";
             anamnesePositiveInput3.UseVisualStyleBackColor = true;
             //
@@ -544,6 +544,7 @@
             // anamneseNegativeInput4
             //
             anamneseNegativeInput4.AutoSize = true;
+            anamneseNegativeInput4.Checked = true;
             anamneseNegativeInput4.Location = new Point(60, 3);
             anamneseNegativeInput4.Name = "anamneseNegativeInput4";
             anamneseNegativeInput4.Size = new Size(47, 19);
@@ -559,7 +560,6 @@
             anamnesePositiveInput4.Name = "anamnesePositiveInput4";
             anamnesePositiveInput4.Size = new Size(45, 19);
             anamnesePositiveInput4.TabIndex = 42;
-            anamnesePositiveInput4.TabStop = true;
             anamnesePositiveInput4.Text = "Sim";
             anamnesePositiveInput4.UseVisualStyleBackColor = true;
             //
@@ -591,6 +591,7 @@
             // anamneseNegativeInput5
             //
             anamneseNegativeInput5.AutoSize = true;
+            anamneseNegativeInput5.Checked = true;
             anamneseNegativeInput5.Location = new Point(60, 1);
             anamneseNegativeInput5.Name = "anamneseNegativeInput5";
             anamneseNegativeInput5.Size = new Size(47, 19);
@@ -606,7 +607,6 @@
             anamnesePositiveInput5.Name = "anamnesePositiveInput5";
             anamnesePositiveInput5.Size = new Size(45, 19);
             anamnesePositiveInput5.TabIndex = 47;
-            anamnesePositiveInput5.TabStop = true;
             anamnesePositiveInput5.Text = "Sim";
             anamnesePositiveInput5.UseVisualStyleBackColor = true;
             //
@@ -638,6 +638,7 @@
             // anamneseNegativeInput6
             //
             anamneseNegativeInput6.AutoSize = true;
+            anamneseNegativeInput6.Checked = true;
             anamneseNegativeInput6.Location = new Point(60, 5);
             anamneseNegativeInput6.Name = "anamneseNegativeInput6";
             anamneseNegativeInput6.Size = new Size(47, 19);
@@ -653,7 +654,6 @@
             anamnesePositiveInput6.Name = "anamnesePositiveInput6";
             anamnesePositiveInput6.Size = new Size(45, 19);
             anamnesePositiveInput6.TabIndex = 52;
-            anamnesePositiveInput6.TabStop = true;
             anamnesePositiveInput6.Text = "Sim";
             anamnesePositiveInput6.UseVisualStyleBackColor = true;
             //
@@ -685,6 +685,7 @@
             // anamneseNegativeInput7
             //
             anamneseNegativeInput7.AutoSize = true;
+            anamneseNegativeInput7.Checked = true;
             anamneseNegativeInput7.Location = new Point(60, 4);
             anamneseNegativeInput7.Name = "anamneseNegativeInput7";
             anamneseNegativeInput7.Size = new Size(47, 19);
@@ -700,7 +701,6 @@
             anamnesePositiveInput7.Name = "anamnesePositiveInput7";
             anamnesePositiveInput7.Size = new Size(45, 19);
             anamnesePositiveInput7.TabIndex = 57;
-            anamnesePositiveInput7.TabStop = true;
             anamnesePositiveInput7.Text = "Sim";
             anamnesePositiveInput7.UseVisualStyleBackColor = true;
             //
@@ -732,6 +732,7 @@
             // anamneseNegativeInput8
             //
             anamneseNegativeInput8.AutoSize = true;
+            anamneseNegativeInput8.Checked = true;
             anamneseNegativeInput8.Location = new Point(60, 4);
             anamneseNegativeInput8.Name = "anamneseNegativeInput8";
             anamneseNegativeInput8.Size = new Size(47, 19);
@@ -747,7 +748,6 @@
             anamnesePositiveInput8.Name = "anamnesePositiveInput8";
             anamnesePositiveInput8.Size = new Size(45, 19);
             anamnesePositiveInput8.TabIndex = 62;
-            anamnesePositiveInput8.TabStop = true;
             anamnesePositiveInput8.Text = "Sim";
             anamnesePositiveInput8.UseVisualStyleBackColor = true;
             //
@@ -779,6 +779,7 @@
             // anamneseNegativeInput9
             //
             anamneseNegativeInput9.AutoSize = true;
+            anamneseNegativeInput9.Checked = true;
             anamneseNegativeInput9.Location = new Point(60, 4);
             anamneseNegativeInput9.Name = "anamneseNegativeInput9";
             anamneseNegativeInput9.Size = new Size(47, 19);
@@ -794,7 +795,6 @@
             anamnesePositiveInput9.Name = "anamnesePositiveInput9";
             anamnesePositiveInput9.Size = new Size(45, 19);
             anamnesePositiveInput9.TabIndex = 67;
-            anamnesePositiveInput9.TabStop = true;
             anamnesePositiveInput9.Text = "Sim";
             anamnesePositiveInput9.UseVisualStyleBackColor = true;
             //
@@ -826,6 +826,7 @@
             // anamneseNegativeInput10
             //
             anamneseNegativeInput10.AutoSize = true;
+            anamneseNegativeInput10.Checked = true;
             anamneseNegativeInput10.Location = new Point(60, 2);
             anamneseNegativeInput10.Name = "anamneseNegativeInput10";
             anamneseNegativeInput10.Size = new Size(47, 19);
@@ -841,7 +842,6 @@
             anamnesePositiveInput10.Name = "anamnesePositiveInput10";
             anamnesePositiveInput10.Size = new Size(45, 19);
             anamnesePositiveInput10.TabIndex = 72;
-            anamnesePositiveInput10.TabStop = true;
             anamnesePositiveInput10.Text = "Sim";
             anamnesePositiveInput10.UseVisualStyleBackColor = true;
             //
@@ -873,6 +873,7 @@
             // anamneseNegativeInput11
             //
             anamneseNegativeInput11.AutoSize = true;
+            anamneseNegativeInput11.Checked = true;
             anamneseNegativeInput11.Location = new Point(60, 4);
             anamneseNegativeInput11.Name = "anamneseNegativeInput11";
             anamneseNegativeInput11.Size = new Size(47, 19);
@@ -888,7 +889,6 @@
             anamnesePositiveInput11.Name = "anamnesePositiveInput11";
             anamnesePositiveInput11.Size = new Size(45, 19);
             anamnesePositiveInput11.TabIndex = 77;
-            anamnesePositiveInput11.TabStop = true;
             anamnesePositiveInput11.Text = "Sim";
             anamnesePositiveInput11.UseVisualStyleBackColor = true;
             //
@@ -920,6 +920,7 @@
             // anamneseNegativeInput12
             //
             anamneseNegativeInput12.AutoSize = true;
+            anamneseNegativeInput12.Checked = true;
             anamneseNegativeInput12.Location = new Point(60, 4);
             anamneseNegativeInput12.Name = "anamneseNegativeInput12";
             anamneseNegativeInput12.Size = new Size(47, 19);
@@ -935,7 +936,6 @@
             anamnesePositiveInput12.Name = "anamnesePositiveInput12";
             anamnesePositiveInput12.Size = new Size(45, 19);
             anamnesePositiveInput12.TabIndex = 82;
-            anamnesePositiveInput12.TabStop = true;
             anamnesePositiveInput12.Text = "Sim";
             anamnesePositiveInput12.UseVisualStyleBackColor = true;
             //
@@ -967,6 +967,7 @@
             // anamneseNegativeInput13
             //
             anamneseNegativeInput13.AutoSize = true;
+            anamneseNegativeInput13.Checked = true;
             anamneseNegativeInput13.Location = new Point(60, 0);
             anamneseNegativeInput13.Name = "anamneseNegativeInput13";
             anamneseNegativeInput13.Size = new Size(47, 19);
@@ -982,7 +983,6 @@
             anamnesePositiveInput13.Name = "anamnesePositiveInput13";
             anamnesePositiveInput13.Size = new Size(45, 19);
             anamnesePositiveInput13.TabIndex = 87;
-            anamnesePositiveInput13.TabStop = true;
             anamnesePositiveInput13.Text = "Sim";
             anamnesePositiveInput13.UseVisualStyleBackColor = true;
             //
@@ -1014,6 +1014,7 @@
             // anamneseNegativeInput14
             //
             anamneseNegativeInput14.AutoSize = true;
+            anamneseNegativeInput14.Checked = true;
             anamneseNegativeInput14.Location = new Point(60, 0);
             anamneseNegativeInput14.Name = "anamneseNegativeInput14";
             anamneseNegativeInput14.Size = new Size(47, 19);
@@ -1029,7 +1030,6 @@
             anamnesePositiveInput14.Name = "anamnesePositiveInput14";
             anamnesePositiveInput14.Size = new Size(45, 19);
             anamnesePositiveInput14.TabIndex = 92;
-            anamnesePositiveInput14.TabStop = true;
             anamnesePositiveInput14.Text = "Sim";
             anamnesePositiveInput14.UseVisualStyleBackColor = true;
             //
@@ -1072,6 +1072,7 @@
             // anamneseNegativeInput15
             //
             anamneseNegativeInput15.AutoSize = true;
+            anamneseNegativeInput15.Checked = true;
             anamneseNegativeInput15.Location = new Point(51, 4);
             anamneseNegativeInput15.Name = "anamneseNegativeInput15";
             anamneseNegativeInput15.Size = new Size(47, 19);
@@ -1087,13 +1088,13 @@
             anamnesePositiveInput15.Name = "anamnesePositiveInput15";
             anamnesePositiveInput15.Size = new Size(45, 19);
             anamnesePositiveInput15.TabIndex = 104;
-            anamnesePositiveInput15.TabStop = true;
             anamnesePositiveInput15.Text = "Sim";
             anamnesePositiveInput15.UseVisualStyleBackColor = true;
             //
             // anamneseNegativeInput16
             //
             anamneseNegativeInput16.AutoSize = true;
+            anamneseNegativeInput16.Checked = true;
             anamneseNegativeInput16.Location = new Point(52, 0);
             anamneseNegativeInput16.Name = "anamneseNegativeInput16";
             anamneseNegativeInput16.Size = new Size(47, 19);
@@ -1109,7 +1110,6 @@
             anamnesePositiveInput16.Name = "anamnesePositiveInput16";
             anamnesePositiveInput16.Size = new Size(45, 19);
             anamnesePositiveInput16.TabIndex = 106;
-            anamnesePositiveInput16.TabStop = true;
             anamnesePositiveInput16.Text = "Sim";
             anamnesePositiveInput16.UseVisualStyleBackColor = true;
             //
@@ -1123,6 +1123,7 @@
             // anamneseNegativeInput1
             //
             anamneseNegativeInput1.AutoSize = true;
+            anamneseNegativeInput1.Checked = true;
             anamneseNegativeInput1.Location = new Point(60, 2);
             anamneseNegativeInput1.Name = "anamneseNegativeInput1";
             anamneseNegativeInput1.Size = new Size(47, 19);
@@ -1138,7 +1139,6 @@
             anamnesePositiveInput1.Name = "anamnesePositiveInput1";
             anamnesePositiveInput1.Size = new Size(45, 19);
             anamnesePositiveInput1.TabIndex = 26;
-            anamnesePositiveInput1.TabStop = true;
             anamnesePositiveInput1.Text = "Sim";
             anamnesePositiveInput1.UseVisualStyleBackColor = true;
             //
@@ -1311,13 +1311,13 @@
             anamnesePositiveInput17.Name = "anamnesePositiveInput17";
             anamnesePositiveInput17.Size = new Size(45, 19);
             anamnesePositiveInput17.TabIndex = 104;
-            anamnesePositiveInput17.TabStop = true;
             anamnesePositiveInput17.Text = "Sim";
             anamnesePositiveInput17.UseVisualStyleBackColor = true;
             //
             // anamneseNegativeInput17
             //
             anamneseNegativeInput17.AutoSize = true;
+            anamneseNegativeInput17.Checked = true;
             anamneseNegativeInput17.Location = new Point(51, 4);
             anamneseNegativeInput17.Name = "anamneseNegativeInput17";
             anamneseNegativeInput17.Size = new Size(47, 19);
@@ -1351,13 +1351,13 @@
             anamnesePositiveInput18.Name = "anamnesePositiveInput18";
             anamnesePositiveInput18.Size = new Size(45, 19);
             anamnesePositiveInput18.TabIndex = 104;
-            anamnesePositiveInput18.TabStop = true;
             anamnesePositiveInput18.Text = "Sim";
             anamnesePositiveInput18.UseVisualStyleBackColor = true;
             //
             // anamneseNegativeInput18
             //
             anamneseNegativeInput18.AutoSize = true;
+            anamneseNegativeInput18.Checked = true;
             anamneseNegativeInput18.Location = new Point(51, 4);
             anamneseNegativeInput18.Name = "anamneseNegativeInput18";
             anamneseNegativeInput18.Size = new Size(47, 19);
@@ -1391,13 +1391,13 @@
             anamnesePositiveInput19.Name = "anamnesePositiveInput19";
             anamnesePositiveInput19.Size = new Size(45, 19);
             anamnesePositiveInput19.TabIndex = 104;
-            anamnesePositiveInput19.TabStop = true;
             anamnesePositiveInput19.Text = "Sim";
             anamnesePositiveInput19.UseVisualStyleBackColor = true;
             //
             // anamneseNegativeInput19
             //
             anamneseNegativeInput19.AutoSize = true;
+            anamneseNegativeInput19.Checked = true;
             anamneseNegativeInput19.Location = new Point(51, 4);
             anamneseNegativeInput19.Name = "anamneseNegativeInput19";
             anamneseNegativeInput19.Size = new Size(47, 19);
@@ -1431,13 +1431,13 @@
             anamnesePositiveInput20.Name = "anamnesePositiveInput20";
             anamnesePositiveInput20.Size = new Size(45, 19);
             anamnesePositiveInput20.TabIndex = 104;
-            anamnesePositiveInput20.TabStop = true;
             anamnesePositiveInput20.Text = "Sim";
             anamnesePositiveInput20.UseVisualStyleBackColor = true;
             //
             // anamneseNegativeInput20
             //
             anamneseNegativeInput20.AutoSize = true;
+            anamneseNegativeInput20.Checked = true;
             anamneseNegativeInput20.Location = new Point(51, 4);
             anamneseNegativeInput20.Name = "anamneseNegativeInput20";
             anamneseNegativeInput20.Size = new Size(47, 19);
@@ -1471,13 +1471,13 @@
             anamnesePositiveInput21.Name = "anamnesePositiveInput21";
             anamnesePositiveInput21.Size = new Size(45, 19);
             anamnesePositiveInput21.TabIndex = 104;
-            anamnesePositiveInput21.TabStop = true;
             anamnesePositiveInput21.Text = "Sim";
             anamnesePositiveInput21.UseVisualStyleBackColor = true;
             //
             // anamneseNegativeInput21
             //
             anamneseNegativeInput21.AutoSize = true;
+            anamneseNegativeInput21.Checked = true;
             anamneseNegativeInput21.Location = new Point(51, 4);
             anamneseNegativeInput21.Name = "anamneseNegativeInput21";
             anamneseNegativeInput21.Size = new Size(47, 19);
@@ -1511,13 +1511,13 @@
             anamnesePositiveInput22.Name = "anamnesePositiveInput22";
             anamnesePositiveInput22.Size = new Size(45, 19);
             anamnesePositiveInput22.TabIndex = 104;
-            anamnesePositiveInput22.TabStop = true;
             anamnesePositiveInput22.Text = "Sim";
             anamnesePositiveInput22.UseVisualStyleBackColor = true;
             //
             // anamneseNegativeInput22
             //
             anamneseNegativeInput22.AutoSize = true;
+            anamneseNegativeInput22.Checked = true;
             anamneseNegativeInput22.Location = new Point(52, 4);
             anamneseNegativeInput22.Name = "anamneseNegativeInput22";
             anamneseNegativeInput22.Size = new Size(47, 19);
