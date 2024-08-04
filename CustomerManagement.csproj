@@ -19,7 +19,7 @@
     <None Update="sql\createCustomersTable.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="sql\insertCustomer.sql">
+    <None Update="sql\insertCustomerAndAnamnese.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="sql\updateCustomer.sql">
