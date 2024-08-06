@@ -1,11 +1,11 @@
 namespace CustomerManagement
 {
-    public partial class Main : Form
+    public partial class MainForm : Form
     {
         private readonly CustomerForm customerForm;
         private readonly Database database;
 
-        public Main()
+        public MainForm()
         {
             InitializeComponent();
 

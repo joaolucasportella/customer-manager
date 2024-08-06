@@ -1,10 +1,6 @@
-﻿using System;
-using System.Drawing;
-using System.Windows.Forms;
-
-namespace CustomerManagement
+﻿namespace CustomerManagement
 {
-    partial class Main : Form
+    partial class MainForm : Form
     {
         private System.ComponentModel.IContainer components = null;
 
@@ -19,7 +15,7 @@ namespace CustomerManagement
 
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             RegisterCustomer = new Button();
             label1 = new Label();
             FetchCustomer = new Button();
