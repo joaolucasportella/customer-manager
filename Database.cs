@@ -5,7 +5,10 @@ namespace CustomerManagement
     public class Database
     {
         private static readonly string connectionString = "Data Source=clientes.db;Version=3;";
-        private static readonly string sqlDirectory = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "sql");
+        private static readonly string sqlDirectoryPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "sql");
+        private static readonly string specialDirectoryPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+        private static readonly string databaseDirectoryPath = Path.Combine(specialDirectoryPath, "Portella");
+        private static readonly string databaseFilePath = Path.Combine(databaseDirectoryPath, "clientes.db");
 
         public Database()
         {
@@ -14,9 +17,14 @@ namespace CustomerManagement
 
         private void CreateDatabaseIfNotExists()
         {
-            if (!File.Exists("clientes.db"))
+            if (!Directory.Exists(databaseDirectoryPath))
             {
-                SQLiteConnection.CreateFile("clientes.db");
+                Directory.CreateDirectory(databaseDirectoryPath);
+            }
+
+            if (!File.Exists(databaseFilePath))
+            {
+                SQLiteConnection.CreateFile(databaseFilePath);
 
                 using (var connection = new SQLiteConnection(connectionString))
                 {
@@ -30,7 +38,7 @@ namespace CustomerManagement
 
         private void ExecuteSqlFromFile(SQLiteConnection connection, string fileName)
         {
-            string sqlFilePath = Path.Combine(sqlDirectory, fileName);
+            string sqlFilePath = Path.Combine(sqlDirectoryPath, fileName);
 
             if (!File.Exists(sqlFilePath))
             {
@@ -257,7 +265,7 @@ namespace CustomerManagement
             {
                 connection.Open();
 
-                string sqlFilePath = Path.Combine(sqlDirectory, fileName);
+                string sqlFilePath = Path.Combine(sqlDirectoryPath, fileName);
 
                 if (!File.Exists(sqlFilePath))
                 {
@@ -293,7 +301,7 @@ namespace CustomerManagement
             {
                 connection.Open();
 
-                string sqlFilePath = Path.Combine(sqlDirectory, fileName);
+                string sqlFilePath = Path.Combine(sqlDirectoryPath, fileName);
 
                 if (!File.Exists(sqlFilePath))
                 {
