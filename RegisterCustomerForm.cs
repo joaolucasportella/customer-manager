@@ -1,10 +1,10 @@
 ﻿namespace CustomerManagement
 {
-    public partial class CustomerForm : Form
+    public partial class RegisterCustomerForm : Form
     {
         private readonly Database database;
 
-        public CustomerForm()
+        public RegisterCustomerForm()
         {
             InitializeComponent();
 
