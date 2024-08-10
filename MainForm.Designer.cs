@@ -60,6 +60,7 @@
             FetchCustomer.TabIndex = 2;
             FetchCustomer.Text = "Consultar Cliente";
             FetchCustomer.UseVisualStyleBackColor = false;
+            FetchCustomer.Click += FetchCustomerClick;
             //
             // MainForm
             //
@@ -72,6 +73,7 @@
             Controls.Add(RegisterCustomer);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
             Name = "MainForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Gerenciador de Clientes";
