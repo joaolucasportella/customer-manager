@@ -61,7 +61,7 @@
             FetchCustomer.Text = "Consultar Cliente";
             FetchCustomer.UseVisualStyleBackColor = false;
             //
-            // Main
+            // MainForm
             //
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -72,7 +72,8 @@
             Controls.Add(RegisterCustomer);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Name = "Main";
+            Name = "MainForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Gerenciador de Clientes";
             Load += MainLoad;
             ResumeLayout(false);
