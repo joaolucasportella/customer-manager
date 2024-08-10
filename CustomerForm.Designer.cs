@@ -373,9 +373,9 @@
             ReturnToHomePage.FlatStyle = FlatStyle.Flat;
             ReturnToHomePage.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             ReturnToHomePage.ForeColor = Color.White;
-            ReturnToHomePage.Location = new Point(33, 833);
+            ReturnToHomePage.Location = new Point(656, 630);
             ReturnToHomePage.Name = "ReturnToHomePage";
-            ReturnToHomePage.Size = new Size(100, 54);
+            ReturnToHomePage.Size = new Size(129, 54);
             ReturnToHomePage.TabIndex = 22;
             ReturnToHomePage.Text = "Voltar";
             ReturnToHomePage.UseVisualStyleBackColor = false;
@@ -388,9 +388,9 @@
             RegisterCustomer.FlatStyle = FlatStyle.Flat;
             RegisterCustomer.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             RegisterCustomer.ForeColor = Color.White;
-            RegisterCustomer.Location = new Point(791, 833);
+            RegisterCustomer.Location = new Point(812, 628);
             RegisterCustomer.Name = "RegisterCustomer";
-            RegisterCustomer.Size = new Size(150, 54);
+            RegisterCustomer.Size = new Size(129, 54);
             RegisterCustomer.TabIndex = 23;
             RegisterCustomer.Text = "Finalizar Cadastro";
             RegisterCustomer.UseVisualStyleBackColor = false;
@@ -428,14 +428,14 @@
             //
             anamneseTextInput1.Location = new Point(424, 284);
             anamneseTextInput1.Name = "anamneseTextInput1";
-            anamneseTextInput1.Size = new Size(517, 23);
+            anamneseTextInput1.Size = new Size(200, 23);
             anamneseTextInput1.TabIndex = 30;
             //
             // anamneseTextInput2
             //
             anamneseTextInput2.Location = new Point(424, 313);
             anamneseTextInput2.Name = "anamneseTextInput2";
-            anamneseTextInput2.Size = new Size(517, 23);
+            anamneseTextInput2.Size = new Size(200, 23);
             anamneseTextInput2.TabIndex = 35;
             //
             // anamneseLabel4
@@ -482,7 +482,7 @@
             //
             anamneseTextInput3.Location = new Point(424, 342);
             anamneseTextInput3.Name = "anamneseTextInput3";
-            anamneseTextInput3.Size = new Size(517, 23);
+            anamneseTextInput3.Size = new Size(200, 23);
             anamneseTextInput3.TabIndex = 40;
             //
             // anamneseLabel6
@@ -529,7 +529,7 @@
             //
             anamneseTextInput4.Location = new Point(424, 371);
             anamneseTextInput4.Name = "anamneseTextInput4";
-            anamneseTextInput4.Size = new Size(517, 23);
+            anamneseTextInput4.Size = new Size(200, 23);
             anamneseTextInput4.TabIndex = 45;
             //
             // anamneseLabel8
@@ -576,7 +576,7 @@
             //
             anamneseTextInput5.Location = new Point(424, 400);
             anamneseTextInput5.Name = "anamneseTextInput5";
-            anamneseTextInput5.Size = new Size(517, 23);
+            anamneseTextInput5.Size = new Size(200, 23);
             anamneseTextInput5.TabIndex = 50;
             //
             // anamneseLabel10
@@ -623,7 +623,7 @@
             //
             anamneseTextInput6.Location = new Point(424, 429);
             anamneseTextInput6.Name = "anamneseTextInput6";
-            anamneseTextInput6.Size = new Size(517, 23);
+            anamneseTextInput6.Size = new Size(200, 23);
             anamneseTextInput6.TabIndex = 55;
             //
             // anamneseLabel12
@@ -670,7 +670,7 @@
             //
             anamneseTextInput7.Location = new Point(424, 458);
             anamneseTextInput7.Name = "anamneseTextInput7";
-            anamneseTextInput7.Size = new Size(517, 23);
+            anamneseTextInput7.Size = new Size(200, 23);
             anamneseTextInput7.TabIndex = 60;
             //
             // anamneseLabel14
@@ -717,7 +717,7 @@
             //
             anamneseTextInput8.Location = new Point(424, 487);
             anamneseTextInput8.Name = "anamneseTextInput8";
-            anamneseTextInput8.Size = new Size(517, 23);
+            anamneseTextInput8.Size = new Size(200, 23);
             anamneseTextInput8.TabIndex = 65;
             //
             // anamneseLabel16
@@ -764,7 +764,7 @@
             //
             anamneseTextInput9.Location = new Point(424, 516);
             anamneseTextInput9.Name = "anamneseTextInput9";
-            anamneseTextInput9.Size = new Size(517, 23);
+            anamneseTextInput9.Size = new Size(200, 23);
             anamneseTextInput9.TabIndex = 70;
             //
             // anamneseLabel18
@@ -811,7 +811,7 @@
             //
             anamneseTextInput10.Location = new Point(424, 545);
             anamneseTextInput10.Name = "anamneseTextInput10";
-            anamneseTextInput10.Size = new Size(517, 23);
+            anamneseTextInput10.Size = new Size(200, 23);
             anamneseTextInput10.TabIndex = 75;
             //
             // anamneseLabel20
@@ -858,7 +858,7 @@
             //
             anamneseTextInput11.Location = new Point(424, 574);
             anamneseTextInput11.Name = "anamneseTextInput11";
-            anamneseTextInput11.Size = new Size(517, 23);
+            anamneseTextInput11.Size = new Size(200, 23);
             anamneseTextInput11.TabIndex = 80;
             //
             // anamneseLabel22
@@ -905,7 +905,7 @@
             //
             anamneseTextInput12.Location = new Point(424, 603);
             anamneseTextInput12.Name = "anamneseTextInput12";
-            anamneseTextInput12.Size = new Size(517, 23);
+            anamneseTextInput12.Size = new Size(200, 23);
             anamneseTextInput12.TabIndex = 85;
             //
             // anamneseLabel24
@@ -952,7 +952,7 @@
             //
             anamneseTextInput13.Location = new Point(424, 632);
             anamneseTextInput13.Name = "anamneseTextInput13";
-            anamneseTextInput13.Size = new Size(517, 23);
+            anamneseTextInput13.Size = new Size(200, 23);
             anamneseTextInput13.TabIndex = 90;
             //
             // anamneseLabel26
@@ -999,7 +999,7 @@
             //
             anamneseTextInput14.Location = new Point(424, 661);
             anamneseTextInput14.Name = "anamneseTextInput14";
-            anamneseTextInput14.Size = new Size(517, 23);
+            anamneseTextInput14.Size = new Size(200, 23);
             anamneseTextInput14.TabIndex = 95;
             //
             // anamneseLabel28
@@ -1045,7 +1045,7 @@
             // anamneseLabel31
             //
             anamneseLabel31.AutoSize = true;
-            anamneseLabel31.Location = new Point(570, 696);
+            anamneseLabel31.Location = new Point(656, 348);
             anamneseLabel31.Name = "anamneseLabel31";
             anamneseLabel31.Size = new Size(120, 15);
             anamneseLabel31.TabIndex = 99;
@@ -1054,7 +1054,7 @@
             // anamneseLabel29
             //
             anamneseLabel29.AutoSize = true;
-            anamneseLabel29.Location = new Point(33, 696);
+            anamneseLabel29.Location = new Point(656, 290);
             anamneseLabel29.Name = "anamneseLabel29";
             anamneseLabel29.Size = new Size(66, 15);
             anamneseLabel29.TabIndex = 96;
@@ -1063,7 +1063,7 @@
             // anamneseLabel30
             //
             anamneseLabel30.AutoSize = true;
-            anamneseLabel30.Location = new Point(290, 696);
+            anamneseLabel30.Location = new Point(656, 319);
             anamneseLabel30.Name = "anamneseLabel30";
             anamneseLabel30.Size = new Size(61, 15);
             anamneseLabel30.TabIndex = 101;
@@ -1073,7 +1073,7 @@
             //
             anamneseNegativeInput15.AutoSize = true;
             anamneseNegativeInput15.Checked = true;
-            anamneseNegativeInput15.Location = new Point(51, 4);
+            anamneseNegativeInput15.Location = new Point(51, 2);
             anamneseNegativeInput15.Name = "anamneseNegativeInput15";
             anamneseNegativeInput15.Size = new Size(47, 19);
             anamneseNegativeInput15.TabIndex = 105;
@@ -1084,7 +1084,7 @@
             // anamnesePositiveInput15
             //
             anamnesePositiveInput15.AutoSize = true;
-            anamnesePositiveInput15.Location = new Point(0, 4);
+            anamnesePositiveInput15.Location = new Point(0, 2);
             anamnesePositiveInput15.Name = "anamnesePositiveInput15";
             anamnesePositiveInput15.Size = new Size(45, 19);
             anamnesePositiveInput15.TabIndex = 104;
@@ -1095,7 +1095,7 @@
             //
             anamneseNegativeInput16.AutoSize = true;
             anamneseNegativeInput16.Checked = true;
-            anamneseNegativeInput16.Location = new Point(52, 0);
+            anamneseNegativeInput16.Location = new Point(52, 4);
             anamneseNegativeInput16.Name = "anamneseNegativeInput16";
             anamneseNegativeInput16.Size = new Size(47, 19);
             anamneseNegativeInput16.TabIndex = 107;
@@ -1106,7 +1106,7 @@
             // anamnesePositiveInput16
             //
             anamnesePositiveInput16.AutoSize = true;
-            anamnesePositiveInput16.Location = new Point(1, 0);
+            anamnesePositiveInput16.Location = new Point(1, 4);
             anamnesePositiveInput16.Name = "anamnesePositiveInput16";
             anamnesePositiveInput16.Size = new Size(45, 19);
             anamnesePositiveInput16.TabIndex = 106;
@@ -1115,9 +1115,9 @@
             //
             // anamneseIntegerInput1
             //
-            anamneseIntegerInput1.Location = new Point(709, 690);
+            anamneseIntegerInput1.Location = new Point(787, 342);
             anamneseIntegerInput1.Name = "anamneseIntegerInput1";
-            anamneseIntegerInput1.Size = new Size(53, 23);
+            anamneseIntegerInput1.Size = new Size(100, 23);
             anamneseIntegerInput1.TabIndex = 108;
             //
             // anamneseNegativeInput1
@@ -1272,7 +1272,7 @@
             //
             panel15.Controls.Add(anamnesePositiveInput15);
             panel15.Controls.Add(anamneseNegativeInput15);
-            panel15.Location = new Point(152, 690);
+            panel15.Location = new Point(789, 286);
             panel15.Name = "panel15";
             panel15.Size = new Size(109, 25);
             panel15.TabIndex = 123;
@@ -1281,7 +1281,7 @@
             //
             panel16.Controls.Add(anamnesePositiveInput16);
             panel16.Controls.Add(anamneseNegativeInput16);
-            panel16.Location = new Point(424, 694);
+            panel16.Location = new Point(788, 313);
             panel16.Name = "panel16";
             panel16.Size = new Size(109, 21);
             panel16.TabIndex = 124;
@@ -1289,7 +1289,7 @@
             // anamneseLabel32
             //
             anamneseLabel32.AutoSize = true;
-            anamneseLabel32.Location = new Point(33, 728);
+            anamneseLabel32.Location = new Point(656, 377);
             anamneseLabel32.Name = "anamneseLabel32";
             anamneseLabel32.Size = new Size(66, 15);
             anamneseLabel32.TabIndex = 125;
@@ -1299,7 +1299,7 @@
             //
             panel17.Controls.Add(anamnesePositiveInput17);
             panel17.Controls.Add(anamneseNegativeInput17);
-            panel17.Location = new Point(152, 719);
+            panel17.Location = new Point(788, 369);
             panel17.Name = "panel17";
             panel17.Size = new Size(109, 25);
             panel17.TabIndex = 126;
@@ -1307,7 +1307,7 @@
             // anamnesePositiveInput17
             //
             anamnesePositiveInput17.AutoSize = true;
-            anamnesePositiveInput17.Location = new Point(0, 4);
+            anamnesePositiveInput17.Location = new Point(0, 6);
             anamnesePositiveInput17.Name = "anamnesePositiveInput17";
             anamnesePositiveInput17.Size = new Size(45, 19);
             anamnesePositiveInput17.TabIndex = 104;
@@ -1318,7 +1318,7 @@
             //
             anamneseNegativeInput17.AutoSize = true;
             anamneseNegativeInput17.Checked = true;
-            anamneseNegativeInput17.Location = new Point(51, 4);
+            anamneseNegativeInput17.Location = new Point(52, 6);
             anamneseNegativeInput17.Name = "anamneseNegativeInput17";
             anamneseNegativeInput17.Size = new Size(47, 19);
             anamneseNegativeInput17.TabIndex = 105;
@@ -1329,7 +1329,7 @@
             // anamneseLabel33
             //
             anamneseLabel33.AutoSize = true;
-            anamneseLabel33.Location = new Point(292, 728);
+            anamneseLabel33.Location = new Point(656, 406);
             anamneseLabel33.Name = "anamneseLabel33";
             anamneseLabel33.Size = new Size(123, 15);
             anamneseLabel33.TabIndex = 127;
@@ -1339,7 +1339,7 @@
             //
             panel18.Controls.Add(anamnesePositiveInput18);
             panel18.Controls.Add(anamneseNegativeInput18);
-            panel18.Location = new Point(425, 719);
+            panel18.Location = new Point(787, 398);
             panel18.Name = "panel18";
             panel18.Size = new Size(109, 25);
             panel18.TabIndex = 128;
@@ -1347,7 +1347,7 @@
             // anamnesePositiveInput18
             //
             anamnesePositiveInput18.AutoSize = true;
-            anamnesePositiveInput18.Location = new Point(0, 4);
+            anamnesePositiveInput18.Location = new Point(1, 6);
             anamnesePositiveInput18.Name = "anamnesePositiveInput18";
             anamnesePositiveInput18.Size = new Size(45, 19);
             anamnesePositiveInput18.TabIndex = 104;
@@ -1358,7 +1358,7 @@
             //
             anamneseNegativeInput18.AutoSize = true;
             anamneseNegativeInput18.Checked = true;
-            anamneseNegativeInput18.Location = new Point(51, 4);
+            anamneseNegativeInput18.Location = new Point(53, 6);
             anamneseNegativeInput18.Name = "anamneseNegativeInput18";
             anamneseNegativeInput18.Size = new Size(47, 19);
             anamneseNegativeInput18.TabIndex = 105;
@@ -1369,7 +1369,7 @@
             // anamneseLabel34
             //
             anamneseLabel34.AutoSize = true;
-            anamneseLabel34.Location = new Point(33, 760);
+            anamneseLabel34.Location = new Point(656, 435);
             anamneseLabel34.Name = "anamneseLabel34";
             anamneseLabel34.Size = new Size(81, 15);
             anamneseLabel34.TabIndex = 129;
@@ -1379,7 +1379,7 @@
             //
             panel19.Controls.Add(anamnesePositiveInput19);
             panel19.Controls.Add(anamneseNegativeInput19);
-            panel19.Location = new Point(152, 750);
+            panel19.Location = new Point(787, 427);
             panel19.Name = "panel19";
             panel19.Size = new Size(109, 25);
             panel19.TabIndex = 130;
@@ -1387,7 +1387,7 @@
             // anamnesePositiveInput19
             //
             anamnesePositiveInput19.AutoSize = true;
-            anamnesePositiveInput19.Location = new Point(0, 4);
+            anamnesePositiveInput19.Location = new Point(1, 6);
             anamnesePositiveInput19.Name = "anamnesePositiveInput19";
             anamnesePositiveInput19.Size = new Size(45, 19);
             anamnesePositiveInput19.TabIndex = 104;
@@ -1398,7 +1398,7 @@
             //
             anamneseNegativeInput19.AutoSize = true;
             anamneseNegativeInput19.Checked = true;
-            anamneseNegativeInput19.Location = new Point(51, 4);
+            anamneseNegativeInput19.Location = new Point(53, 6);
             anamneseNegativeInput19.Name = "anamneseNegativeInput19";
             anamneseNegativeInput19.Size = new Size(47, 19);
             anamneseNegativeInput19.TabIndex = 105;
@@ -1409,7 +1409,7 @@
             // anamneseLabel35
             //
             anamneseLabel35.AutoSize = true;
-            anamneseLabel35.Location = new Point(292, 760);
+            anamneseLabel35.Location = new Point(656, 464);
             anamneseLabel35.Name = "anamneseLabel35";
             anamneseLabel35.Size = new Size(97, 15);
             anamneseLabel35.TabIndex = 131;
@@ -1419,7 +1419,7 @@
             //
             panel20.Controls.Add(anamnesePositiveInput20);
             panel20.Controls.Add(anamneseNegativeInput20);
-            panel20.Location = new Point(425, 750);
+            panel20.Location = new Point(787, 454);
             panel20.Name = "panel20";
             panel20.Size = new Size(109, 25);
             panel20.TabIndex = 132;
@@ -1427,7 +1427,7 @@
             // anamnesePositiveInput20
             //
             anamnesePositiveInput20.AutoSize = true;
-            anamnesePositiveInput20.Location = new Point(0, 4);
+            anamnesePositiveInput20.Location = new Point(1, 6);
             anamnesePositiveInput20.Name = "anamnesePositiveInput20";
             anamnesePositiveInput20.Size = new Size(45, 19);
             anamnesePositiveInput20.TabIndex = 104;
@@ -1438,7 +1438,7 @@
             //
             anamneseNegativeInput20.AutoSize = true;
             anamneseNegativeInput20.Checked = true;
-            anamneseNegativeInput20.Location = new Point(51, 4);
+            anamneseNegativeInput20.Location = new Point(53, 8);
             anamneseNegativeInput20.Name = "anamneseNegativeInput20";
             anamneseNegativeInput20.Size = new Size(47, 19);
             anamneseNegativeInput20.TabIndex = 105;
@@ -1449,7 +1449,7 @@
             // anamneseLabel36
             //
             anamneseLabel36.AutoSize = true;
-            anamneseLabel36.Location = new Point(33, 791);
+            anamneseLabel36.Location = new Point(656, 493);
             anamneseLabel36.Name = "anamneseLabel36";
             anamneseLabel36.Size = new Size(113, 15);
             anamneseLabel36.TabIndex = 133;
@@ -1459,7 +1459,7 @@
             //
             panel21.Controls.Add(anamnesePositiveInput21);
             panel21.Controls.Add(anamneseNegativeInput21);
-            panel21.Location = new Point(152, 784);
+            panel21.Location = new Point(787, 483);
             panel21.Name = "panel21";
             panel21.Size = new Size(109, 25);
             panel21.TabIndex = 134;
@@ -1467,7 +1467,7 @@
             // anamnesePositiveInput21
             //
             anamnesePositiveInput21.AutoSize = true;
-            anamnesePositiveInput21.Location = new Point(0, 4);
+            anamnesePositiveInput21.Location = new Point(1, 7);
             anamnesePositiveInput21.Name = "anamnesePositiveInput21";
             anamnesePositiveInput21.Size = new Size(45, 19);
             anamnesePositiveInput21.TabIndex = 104;
@@ -1478,7 +1478,7 @@
             //
             anamneseNegativeInput21.AutoSize = true;
             anamneseNegativeInput21.Checked = true;
-            anamneseNegativeInput21.Location = new Point(51, 4);
+            anamneseNegativeInput21.Location = new Point(53, 6);
             anamneseNegativeInput21.Name = "anamneseNegativeInput21";
             anamneseNegativeInput21.Size = new Size(47, 19);
             anamneseNegativeInput21.TabIndex = 105;
@@ -1489,7 +1489,7 @@
             // anamneseLabel37
             //
             anamneseLabel37.AutoSize = true;
-            anamneseLabel37.Location = new Point(293, 791);
+            anamneseLabel37.Location = new Point(656, 522);
             anamneseLabel37.Name = "anamneseLabel37";
             anamneseLabel37.Size = new Size(105, 15);
             anamneseLabel37.TabIndex = 135;
@@ -1499,7 +1499,7 @@
             //
             panel22.Controls.Add(anamnesePositiveInput22);
             panel22.Controls.Add(anamneseNegativeInput22);
-            panel22.Location = new Point(424, 784);
+            panel22.Location = new Point(787, 515);
             panel22.Name = "panel22";
             panel22.Size = new Size(109, 25);
             panel22.TabIndex = 136;
@@ -1507,7 +1507,7 @@
             // anamnesePositiveInput22
             //
             anamnesePositiveInput22.AutoSize = true;
-            anamnesePositiveInput22.Location = new Point(1, 3);
+            anamnesePositiveInput22.Location = new Point(2, 5);
             anamnesePositiveInput22.Name = "anamnesePositiveInput22";
             anamnesePositiveInput22.Size = new Size(45, 19);
             anamnesePositiveInput22.TabIndex = 104;
@@ -1518,7 +1518,7 @@
             //
             anamneseNegativeInput22.AutoSize = true;
             anamneseNegativeInput22.Checked = true;
-            anamneseNegativeInput22.Location = new Point(52, 4);
+            anamneseNegativeInput22.Location = new Point(53, 5);
             anamneseNegativeInput22.Name = "anamneseNegativeInput22";
             anamneseNegativeInput22.Size = new Size(47, 19);
             anamneseNegativeInput22.TabIndex = 105;
@@ -1531,7 +1531,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(236, 240, 241);
-            ClientSize = new Size(984, 911);
+            ClientSize = new Size(984, 711);
             Controls.Add(anamneseLabel37);
             Controls.Add(panel22);
             Controls.Add(anamneseLabel36);
