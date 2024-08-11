@@ -284,7 +284,7 @@ namespace CustomerManagement
             LoadData();
         }
 
-        public static void deleteCustomerAndAnamnese(int id)
+        public static void DeleteCustomerAndAnamnese(int id)
         {
             ExecuteNonQueryFromFile(
                 "deleteCustomerAndAnamnese.sql",
