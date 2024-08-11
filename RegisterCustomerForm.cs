@@ -14,6 +14,18 @@
 
         private void RegisterCustomerClick(object sender, EventArgs e)
         {
+            if (nameInput.Text == "")
+            {
+                MessageBox.Show(
+                    text: $"É necessário adicionar um nome para realizar o cadastro do cliente!",
+                    caption: "Aviso",
+                    buttons: MessageBoxButtons.OK,
+                    icon: MessageBoxIcon.Warning
+                );
+
+                return;
+            }
+
             try
             {
                 Database.InsertCustomerAndAnamnese(
