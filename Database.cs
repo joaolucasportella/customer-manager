@@ -179,7 +179,7 @@ namespace CustomerManagement
             LoadData();
         }
 
-        public static void UpdateCustomer(
+        public static void UpdateCustomerAndAnamnese(
             int id,
             string name,
             string rg,
@@ -231,7 +231,7 @@ namespace CustomerManagement
         )
         {
             ExecuteNonQueryFromFile(
-                "updateCustomer.sql",
+                "updateCustomerAndAnamnese.sql",
                 ("@name", name),
                 ("@rg", rg),
                 ("@cpf", cpf),
