@@ -65,15 +65,13 @@
                     hypertensive: anamnesePositiveInput22.Checked,
                     childrenQuantity: (int)anamneseIntegerInput1.Value
                 );
+
+                MessageBox.Show("Cliente cadastrado com successo!");
+                this.ClearInputs();
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Erro ao tentar realizar o cadastro! {ex.Message}");
-            }
-            finally
-            {
-                this.ClearInputs();
-                MessageBox.Show("Cliente cadastrado com successo!");
             }
         }
 
