@@ -284,6 +284,15 @@ namespace CustomerManagement
             LoadData();
         }
 
+        public static void deleteCustomerAndAnamnese(int id)
+        {
+            ExecuteNonQueryFromFile(
+                "deleteCustomerAndAnamnese.sql",
+                ("@id", id)
+            );
+            LoadData();
+        }
+
         private static string ReadSqlFile(string fileName)
         {
             string sqlFilePath = Path.Combine(sqlDirectoryPath, fileName);
