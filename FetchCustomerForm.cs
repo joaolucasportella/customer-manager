@@ -76,7 +76,12 @@ namespace CustomerManagement
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Erro ao tentar atualizar o cadastro! {ex.Message}");
+                MessageBox.Show(
+                    text: $"Erro ao tentar atualizar o cadastro! {ex.Message}",
+                    caption: "Erro",
+                    buttons: MessageBoxButtons.OK,
+                    icon: MessageBoxIcon.Warning
+                );
             }
         }
 
