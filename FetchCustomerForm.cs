@@ -22,6 +22,18 @@ namespace CustomerManagement
                 return;
             }
 
+            if (nameInput.Text == "")
+            {
+                MessageBox.Show(
+                    text: $"Não é possível remover o nome de um cliente!",
+                    caption: "Aviso",
+                    buttons: MessageBoxButtons.OK,
+                    icon: MessageBoxIcon.Warning
+                );
+
+                return;
+            }
+
             DataRow selectedRow = ((DataRowView)searchBox.SelectedItem).Row;
 
             try
@@ -132,6 +144,7 @@ namespace CustomerManagement
 
         private void SearchInputTextChanged(object sender, EventArgs e)
         {
+            searchBox.Hide();
             string filter = searchInput.Text.Trim().ToLower();
 
             if (!string.IsNullOrEmpty(filter))
@@ -154,7 +167,6 @@ namespace CustomerManagement
             }
             else
             {
-                searchBox.Hide();
                 ClearInputs();
             }
         }
