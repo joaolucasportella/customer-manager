@@ -1,5 +1,4 @@
 ﻿using System.Data;
-using System.Windows.Forms;
 
 namespace CustomerManagement
 {
@@ -18,7 +17,67 @@ namespace CustomerManagement
 
         private void UpdateCustomerClick(object sender, EventArgs e)
         {
+            DataRow selectedRow = ((DataRowView)searchBox.SelectedItem).Row;
 
+            try
+            {
+                Database.UpdateCustomerAndAnamnese(
+                    id: Convert.ToInt16(selectedRow["customerId"].ToString()),
+                    name: nameInput.Text,
+                    rg: rgInput.Text,
+                    cpf: cpfInput.Text,
+                    address: addressInput.Text,
+                    cep: cepInput.Text,
+                    city: cityInput.Text,
+                    email: emailInput.Text,
+                    phone1: waInput.Text,
+                    phone2: telInput.Text,
+                    birthDate: birthDateInput.Text,
+                    previousEstheticTreatment: anamnesePositiveInput1.Checked,
+                    specifyPreviousEstheticTreatment: anamneseTextInput1.Text,
+                    allergies: anamnesePositiveInput2.Checked,
+                    specifyAllergies: anamneseTextInput2.Text,
+                    regularIntestinalFunction: anamnesePositiveInput3.Checked,
+                    specifyRegularIntestinalFunction: anamneseTextInput3.Text,
+                    practiceSports: anamnesePositiveInput4.Checked,
+                    specifyPracticeSports: anamneseTextInput4.Text,
+                    balancedDiet: anamnesePositiveInput5.Checked,
+                    specifyBalancedDiet: anamneseTextInput5.Text,
+                    medicalTreatment: anamnesePositiveInput6.Checked,
+                    specifyMedicalTreatment: anamneseTextInput6.Text,
+                    useMedications: anamnesePositiveInput7.Checked,
+                    specifyUseMedications: anamneseTextInput7.Text,
+                    pacemaker: anamnesePositiveInput8.Checked,
+                    specifyPacemaker: anamneseTextInput8.Text,
+                    metalProstheses: anamnesePositiveInput9.Checked,
+                    specifyMetalProstheses: anamneseTextInput9.Text,
+                    heartProblems: anamnesePositiveInput10.Checked,
+                    specifyHeartProblems: anamneseTextInput10.Text,
+                    oncologicalHistory: anamnesePositiveInput11.Checked,
+                    specifyOncologicalHistory: anamneseTextInput11.Text,
+                    menstrualCycle: anamnesePositiveInput12.Checked,
+                    specifyMenstrualCycle: anamneseTextInput12.Text,
+                    contraceptiveMethod: anamnesePositiveInput13.Checked,
+                    specifyContraceptiveMethod: anamneseTextInput13.Text,
+                    dailyCareProducts: anamnesePositiveInput14.Checked,
+                    specifyDailyCareProducts: anamneseTextInput14.Text,
+                    pregnant: anamnesePositiveInput15.Checked,
+                    hasChildren: anamnesePositiveInput16.Checked,
+                    smoke: anamnesePositiveInput17.Checked,
+                    epilepsy: anamnesePositiveInput18.Checked,
+                    diabetes: anamnesePositiveInput19.Checked,
+                    dentalProsthesis: anamnesePositiveInput20.Checked,
+                    sunExposure: anamnesePositiveInput21.Checked,
+                    hypertensive: anamnesePositiveInput22.Checked,
+                    childrenQuantity: (int)anamneseIntegerInput1.Value
+                );
+
+                MessageBox.Show("Cliente atualizado com successo!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erro ao tentar atualizar o cadastro! {ex.Message}");
+            }
         }
 
         private void DeleteCustomerClick(object sender, EventArgs e)
@@ -29,6 +88,7 @@ namespace CustomerManagement
         private void searchInputTextChanged(object sender, EventArgs e)
         {
             string filter = searchInput.Text.Trim().ToLower();
+
             if (!string.IsNullOrEmpty(filter))
             {
                 DataView view = new DataView(Database.customersTable);
