@@ -1562,7 +1562,7 @@
             searchInput.Name = "searchInput";
             searchInput.Size = new Size(200, 23);
             searchInput.TabIndex = 140;
-            searchInput.TextChanged += searchInputTextChanged;
+            searchInput.TextChanged += SearchInputTextChanged;
             //
             // searchBox
             //
@@ -1574,7 +1574,7 @@
             searchBox.Sorted = true;
             searchBox.TabIndex = 141;
             searchBox.ValueMember = "id";
-            searchBox.SelectedIndexChanged += searchBoxSelectedIndexChanged;
+            searchBox.SelectedIndexChanged += SearchBoxSelectedIndexChanged;
             //
             // FetchCustomerForm
             //

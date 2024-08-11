@@ -113,9 +113,11 @@ namespace CustomerManagement
 
             try
             {
-                Database.deleteCustomerAndAnamnese(Convert.ToInt16(selectedRow["customerId"].ToString()));
+                Database.DeleteCustomerAndAnamnese(Convert.ToInt16(selectedRow["customerId"].ToString()));
 
                 MessageBox.Show("Cliente removido com successo!");
+
+                searchInput.Text = "";
             }
             catch (Exception ex)
             {
@@ -128,7 +130,7 @@ namespace CustomerManagement
             }
         }
 
-        private void searchInputTextChanged(object sender, EventArgs e)
+        private void SearchInputTextChanged(object sender, EventArgs e)
         {
             string filter = searchInput.Text.Trim().ToLower();
 
@@ -145,14 +147,19 @@ namespace CustomerManagement
                 {
                     searchBox.Show();
                 }
+                else
+                {
+                    ClearInputs();
+                }
             }
             else
             {
                 searchBox.Hide();
+                ClearInputs();
             }
         }
 
-        private void searchBoxSelectedIndexChanged(object sender, EventArgs e)
+        private void SearchBoxSelectedIndexChanged(object sender, EventArgs e)
         {
             DataRow selectedRow = ((DataRowView)searchBox.SelectedItem).Row;
 
@@ -251,6 +258,57 @@ namespace CustomerManagement
 
             anamnesePositiveInput22.Checked = Convert.ToBoolean(selectedRow["hypertensive"].ToString());
             anamneseNegativeInput22.Checked = !Convert.ToBoolean(selectedRow["hypertensive"].ToString());
+        }
+
+        private void ClearInputs()
+        {
+            nameInput.Clear();
+            rgInput.Clear();
+            cpfInput.Clear();
+            addressInput.Clear();
+            cepInput.Clear();
+            cityInput.Clear();
+            emailInput.Clear();
+            waInput.Clear();
+            telInput.Clear();
+            birthDateInput.Value = DateTime.Now;
+            anamneseNegativeInput1.Checked = true;
+            anamneseTextInput1.Text = "";
+            anamneseNegativeInput2.Checked = true;
+            anamneseTextInput2.Text = "";
+            anamneseNegativeInput3.Checked = true;
+            anamneseTextInput3.Text = "";
+            anamneseNegativeInput4.Checked = true;
+            anamneseTextInput4.Text = "";
+            anamneseNegativeInput5.Checked = true;
+            anamneseTextInput5.Text = "";
+            anamneseNegativeInput6.Checked = true;
+            anamneseTextInput6.Text = "";
+            anamneseNegativeInput7.Checked = true;
+            anamneseTextInput7.Text = "";
+            anamneseNegativeInput8.Checked = true;
+            anamneseTextInput8.Text = "";
+            anamneseNegativeInput9.Checked = true;
+            anamneseTextInput9.Text = "";
+            anamneseNegativeInput10.Checked = true;
+            anamneseTextInput10.Text = "";
+            anamneseNegativeInput11.Checked = true;
+            anamneseTextInput11.Text = "";
+            anamneseNegativeInput12.Checked = true;
+            anamneseTextInput12.Text = "";
+            anamneseNegativeInput13.Checked = true;
+            anamneseTextInput13.Text = "";
+            anamneseNegativeInput14.Checked = true;
+            anamneseTextInput14.Text = "";
+            anamneseNegativeInput15.Checked = true;
+            anamneseNegativeInput16.Checked = true;
+            anamneseNegativeInput17.Checked = true;
+            anamneseNegativeInput18.Checked = true;
+            anamneseNegativeInput19.Checked = true;
+            anamneseNegativeInput20.Checked = true;
+            anamneseNegativeInput21.Checked = true;
+            anamneseNegativeInput22.Checked = true;
+            anamneseIntegerInput1.Value = 0;
         }
     }
 }
