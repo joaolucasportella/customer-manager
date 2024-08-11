@@ -8,7 +8,9 @@ namespace CustomerManagement
         public MainForm()
         {
             InitializeComponent();
+
             Database.CreateDatabaseIfNotExists();
+            Database.LoadData();
 
             this.registerCustomerForm = new RegisterCustomerForm();
             this.fetchCustomerForm = new FetchCustomerForm();
