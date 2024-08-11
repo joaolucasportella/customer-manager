@@ -17,6 +17,11 @@ namespace CustomerManagement
 
         private void UpdateCustomerClick(object sender, EventArgs e)
         {
+            if (!searchBox.Visible)
+            {
+                return;
+            }
+
             DataRow selectedRow = ((DataRowView)searchBox.SelectedItem).Row;
 
             try
@@ -87,6 +92,11 @@ namespace CustomerManagement
 
         private void DeleteCustomerClick(object sender, EventArgs e)
         {
+            if (!searchBox.Visible)
+            {
+                return;
+            }
+
             DialogResult result = MessageBox.Show(
                 text: $"Esta ação é irreversível! Você tem certeza de que deseja continuar?",
                 caption: "Atenção",
@@ -130,7 +140,11 @@ namespace CustomerManagement
                 searchBox.DataSource = view;
                 searchBox.DisplayMember = "name";
                 searchBox.ValueMember = "id";
-                searchBox.Show();
+
+                if (view.Count > 0)
+                {
+                    searchBox.Show();
+                }
             }
             else
             {
