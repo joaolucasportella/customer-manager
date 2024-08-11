@@ -172,8 +172,9 @@
             panel22 = new Panel();
             anamnesePositiveInput22 = new RadioButton();
             anamneseNegativeInput22 = new RadioButton();
-            comboBox1 = new ComboBox();
             DeleteCustomer = new Button();
+            searchInput = new TextBox();
+            searchBox = new ComboBox();
             ((System.ComponentModel.ISupportInitialize)anamneseIntegerInput1).BeginInit();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
@@ -1540,14 +1541,6 @@
             anamneseNegativeInput22.Text = "Não";
             anamneseNegativeInput22.UseVisualStyleBackColor = true;
             //
-            // comboBox1
-            //
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(214, 28);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(200, 23);
-            comboBox1.TabIndex = 137;
-            //
             // DeleteCustomer
             //
             DeleteCustomer.BackColor = Color.FromArgb(204, 46, 113);
@@ -1563,14 +1556,35 @@
             DeleteCustomer.UseVisualStyleBackColor = false;
             DeleteCustomer.Click += DeleteCustomerClick;
             //
+            // searchInput
+            //
+            searchInput.Location = new Point(214, 27);
+            searchInput.Name = "searchInput";
+            searchInput.Size = new Size(200, 23);
+            searchInput.TabIndex = 140;
+            searchInput.TextChanged += searchInputTextChanged;
+            //
+            // searchBox
+            //
+            searchBox.DisplayMember = "name";
+            searchBox.FormattingEnabled = true;
+            searchBox.Location = new Point(424, 27);
+            searchBox.Name = "searchBox";
+            searchBox.Size = new Size(200, 23);
+            searchBox.Sorted = true;
+            searchBox.TabIndex = 141;
+            searchBox.ValueMember = "id";
+            searchBox.SelectedIndexChanged += searchBoxSelectedIndexChanged;
+            //
             // FetchCustomerForm
             //
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(236, 240, 241);
             ClientSize = new Size(984, 711);
+            Controls.Add(searchBox);
+            Controls.Add(searchInput);
             Controls.Add(DeleteCustomer);
-            Controls.Add(comboBox1);
             Controls.Add(anamneseLabel37);
             Controls.Add(panel22);
             Controls.Add(anamneseLabel36);
@@ -1870,7 +1884,8 @@
         private Panel panel22;
         private RadioButton anamnesePositiveInput22;
         private RadioButton anamneseNegativeInput22;
-        private ComboBox comboBox1;
         private Button DeleteCustomer;
+        private TextBox searchInput;
+        private ComboBox searchBox;
     }
 }
