@@ -2,22 +2,16 @@ namespace CustomerManagement
 {
     public partial class MainForm : Form
     {
-        private readonly Database database;
         private readonly RegisterCustomerForm registerCustomerForm;
         private readonly FetchCustomerForm fetchCustomerForm;
 
         public MainForm()
         {
             InitializeComponent();
+            Database.CreateDatabaseIfNotExists();
 
-            this.database = new Database();
             this.registerCustomerForm = new RegisterCustomerForm();
             this.fetchCustomerForm = new FetchCustomerForm();
-        }
-
-        private void MainLoad(object sender, EventArgs e)
-        {
-            // TODO: fetch sum of total customers and display to user.
         }
 
         private void RegisterCustomerClick(object sender, EventArgs e)

@@ -2,13 +2,9 @@
 {
     public partial class RegisterCustomerForm : Form
     {
-        private readonly Database database;
-
         public RegisterCustomerForm()
         {
             InitializeComponent();
-
-            this.database = new Database();
         }
 
         private void ReturnToHomePageClick(object sender, EventArgs e)
@@ -20,7 +16,7 @@
         {
             try
             {
-                this.database.InsertCustomerAndAnamnese(
+                Database.InsertCustomerAndAnamnese(
                     name: nameInput.Text,
                     rg: rgInput.Text,
                     cpf: cpfInput.Text,
