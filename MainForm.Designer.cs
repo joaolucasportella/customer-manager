@@ -17,7 +17,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             RegisterCustomer = new Button();
-            label1 = new Label();
+            mainTitle = new Label();
             FetchCustomer = new Button();
             SuspendLayout();
             //
@@ -36,16 +36,16 @@
             RegisterCustomer.UseVisualStyleBackColor = false;
             RegisterCustomer.Click += RegisterCustomerClick;
             //
-            // label1
+            // mainTitle
             //
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 24F, FontStyle.Bold);
-            label1.ForeColor = Color.FromArgb(44, 62, 80);
-            label1.Location = new Point(114, 9);
-            label1.Name = "label1";
-            label1.Size = new Size(375, 45);
-            label1.TabIndex = 1;
-            label1.Text = "Gerenciador de Clientes";
+            mainTitle.AutoSize = true;
+            mainTitle.Font = new Font("Segoe UI", 24F, FontStyle.Bold);
+            mainTitle.ForeColor = Color.FromArgb(44, 62, 80);
+            mainTitle.Location = new Point(114, 18);
+            mainTitle.Name = "mainTitle";
+            mainTitle.Size = new Size(375, 45);
+            mainTitle.TabIndex = 1;
+            mainTitle.Text = "Gerenciador de Clientes";
             //
             // FetchCustomer
             //
@@ -69,7 +69,7 @@
             BackColor = Color.FromArgb(236, 240, 241);
             ClientSize = new Size(584, 254);
             Controls.Add(FetchCustomer);
-            Controls.Add(label1);
+            Controls.Add(mainTitle);
             Controls.Add(RegisterCustomer);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
@@ -82,7 +82,7 @@
         }
 
         private Button RegisterCustomer;
-        private Label label1;
+        private Label mainTitle;
         private Button FetchCustomer;
     }
 }
