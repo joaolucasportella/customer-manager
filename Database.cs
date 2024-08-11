@@ -332,54 +332,5 @@ namespace CustomerManagement
                 }
             }
         }
-
-        private static List<Dictionary<string, object>> ExecuteQueryFromFile(string fileName, params (string ParameterName, object Value)[] parameters)
-        {
-            var results = new List<Dictionary<string, object>>();
-
-            string sql = ReadSqlFile(fileName);
-
-            using (var connection = new SQLiteConnection(connectionString))
-            {
-                connection.Open();
-
-                using (var command = new SQLiteCommand(sql, connection))
-                {
-                    foreach (var (parameterName, value) in parameters)
-                    {
-                        if (value is string str && string.IsNullOrEmpty(str))
-                        {
-                            command.Parameters.AddWithValue(parameterName, DBNull.Value);
-                        }
-                        else
-                        {
-                            command.Parameters.AddWithValue(parameterName, value ?? DBNull.Value);
-                        }
-                    }
-
-                    using (var reader = command.ExecuteReader())
-                    {
-                        var columnNames = new List<string>();
-
-                        for (int i = 0; i < reader.FieldCount; i++)
-                        {
-                            columnNames.Add(reader.GetName(i));
-                        }
-
-                        while (reader.Read())
-                        {
-                            var row = new Dictionary<string, object>();
-                            foreach (var columnName in columnNames)
-                            {
-                                row[columnName] = reader[columnName];
-                            }
-                            results.Add(row);
-                        }
-                    }
-                }
-            }
-
-            return results;
-        }
     }
 }
