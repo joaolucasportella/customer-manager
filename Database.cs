@@ -1,9 +1,12 @@
-﻿using System.Data.SQLite;
+﻿using System.Data;
+using System.Data.SQLite;
 
 namespace CustomerManagement
 {
     public static class Database
     {
+        public static DataTable? customersTable;
+
         private static readonly string sqlDirectoryPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "sql");
         private static readonly string specialDirectoryPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
         private static readonly string databaseDirectoryPath = Path.Combine(specialDirectoryPath, "Portella");
@@ -12,39 +15,64 @@ namespace CustomerManagement
 
         public static void CreateDatabaseIfNotExists()
         {
-            if (!Directory.Exists(databaseDirectoryPath))
+            try
             {
-                Directory.CreateDirectory(databaseDirectoryPath);
-            }
+                if (!Directory.Exists(databaseDirectoryPath))
+                {
+                    Directory.CreateDirectory(databaseDirectoryPath);
+                }
 
-            if (!File.Exists(databaseFilePath))
+                if (!File.Exists(databaseFilePath))
+                {
+                    SQLiteConnection.CreateFile(databaseFilePath);
+
+                    using (var connection = new SQLiteConnection(connectionString))
+                    {
+                        connection.Open();
+
+                        ExecuteSqlFromFile(connection, "createCustomersTable.sql");
+                        ExecuteSqlFromFile(connection, "createAnamneseTable.sql");
+                    }
+                }
+            }
+            catch (Exception ex)
             {
-                SQLiteConnection.CreateFile(databaseFilePath);
+                MessageBox.Show(
+                    text: $"Erro ao criar banco de dados: {ex.Message}",
+                    caption: "Erro",
+                    buttons: MessageBoxButtons.OK,
+                    icon: MessageBoxIcon.Error
+                );
+                Application.Exit();
+            }
+        }
+
+        public static void LoadData()
+        {
+            try
+            {
+                string sql = ReadSqlFile("fetchCustomerAndAnamnese.sql");
 
                 using (var connection = new SQLiteConnection(connectionString))
                 {
                     connection.Open();
 
-                    ExecuteSqlFromFile(connection, "createCustomersTable.sql");
-                    ExecuteSqlFromFile(connection, "createAnamneseTable.sql");
+                    using (var adapter = new SQLiteDataAdapter(sql, connection))
+                    {
+                        customersTable = new DataTable();
+                        adapter.Fill(customersTable);
+                    }
                 }
             }
-        }
-
-        private static void ExecuteSqlFromFile(SQLiteConnection connection, string fileName)
-        {
-            string sqlFilePath = Path.Combine(sqlDirectoryPath, fileName);
-
-            if (!File.Exists(sqlFilePath))
+            catch (Exception ex)
             {
-                throw new FileNotFoundException($"SQL file not found: {fileName}");
-            }
-
-            string sql = File.ReadAllText(sqlFilePath);
-
-            using (var command = new SQLiteCommand(sql, connection))
-            {
-                command.ExecuteNonQuery();
+                MessageBox.Show(
+                    text: $"Erro ao carregar dados: {ex.Message}",
+                    caption: "Erro",
+                    buttons: MessageBoxButtons.OK,
+                    icon: MessageBoxIcon.Error
+                );
+                Application.Exit();
             }
         }
 
@@ -148,6 +176,7 @@ namespace CustomerManagement
                 ("@sunExposure", sunExposure),
                 ("@hypertensive", hypertensive)
             );
+            LoadData();
         }
 
         public static void UpdateCustomer(
@@ -252,22 +281,38 @@ namespace CustomerManagement
                 ("@hypertensive", hypertensive),
                 ("@id", id)
             );
+            LoadData();
+        }
+
+        private static string ReadSqlFile(string fileName)
+        {
+            string sqlFilePath = Path.Combine(sqlDirectoryPath, fileName);
+
+            if (!File.Exists(sqlFilePath))
+            {
+                throw new FileNotFoundException($"SQL file not found: {fileName}");
+            }
+
+            return File.ReadAllText(sqlFilePath);
+        }
+
+        private static void ExecuteSqlFromFile(SQLiteConnection connection, string fileName)
+        {
+            string sql = ReadSqlFile(fileName);
+
+            using (var command = new SQLiteCommand(sql, connection))
+            {
+                command.ExecuteNonQuery();
+            }
         }
 
         private static void ExecuteNonQueryFromFile(string fileName, params (string ParameterName, object Value)[] parameters)
         {
+            string sql = ReadSqlFile(fileName);
+
             using (var connection = new SQLiteConnection(connectionString))
             {
                 connection.Open();
-
-                string sqlFilePath = Path.Combine(sqlDirectoryPath, fileName);
-
-                if (!File.Exists(sqlFilePath))
-                {
-                    throw new FileNotFoundException($"SQL file not found: {fileName}");
-                }
-
-                string sql = File.ReadAllText(sqlFilePath);
 
                 using (var command = new SQLiteCommand(sql, connection))
                 {
@@ -292,18 +337,11 @@ namespace CustomerManagement
         {
             var results = new List<Dictionary<string, object>>();
 
+            string sql = ReadSqlFile(fileName);
+
             using (var connection = new SQLiteConnection(connectionString))
             {
                 connection.Open();
-
-                string sqlFilePath = Path.Combine(sqlDirectoryPath, fileName);
-
-                if (!File.Exists(sqlFilePath))
-                {
-                    throw new FileNotFoundException($"SQL file not found: {fileName}");
-                }
-
-                string sql = File.ReadAllText(sqlFilePath);
 
                 using (var command = new SQLiteCommand(sql, connection))
                 {
