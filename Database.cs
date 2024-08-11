@@ -2,7 +2,7 @@
 
 namespace CustomerManagement
 {
-    public class Database
+    public static class Database
     {
         private static readonly string sqlDirectoryPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "sql");
         private static readonly string specialDirectoryPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
@@ -10,12 +10,7 @@ namespace CustomerManagement
         private static readonly string databaseFilePath = Path.Combine(databaseDirectoryPath, "customer_management.db");
         private static readonly string connectionString = $"Data Source={databaseFilePath};Version=3;";
 
-        public Database()
-        {
-            CreateDatabaseIfNotExists();
-        }
-
-        private void CreateDatabaseIfNotExists()
+        public static void CreateDatabaseIfNotExists()
         {
             if (!Directory.Exists(databaseDirectoryPath))
             {
@@ -36,7 +31,7 @@ namespace CustomerManagement
             }
         }
 
-        private void ExecuteSqlFromFile(SQLiteConnection connection, string fileName)
+        private static void ExecuteSqlFromFile(SQLiteConnection connection, string fileName)
         {
             string sqlFilePath = Path.Combine(sqlDirectoryPath, fileName);
 
@@ -53,7 +48,7 @@ namespace CustomerManagement
             }
         }
 
-        public void InsertCustomerAndAnamnese(
+        public static void InsertCustomerAndAnamnese(
             string name,
             string rg,
             string cpf,
@@ -155,7 +150,7 @@ namespace CustomerManagement
             );
         }
 
-        public void UpdateCustomer(
+        public static void UpdateCustomer(
             int id,
             string name,
             string rg,
@@ -259,7 +254,7 @@ namespace CustomerManagement
             );
         }
 
-        private void ExecuteNonQueryFromFile(string fileName, params (string ParameterName, object Value)[] parameters)
+        private static void ExecuteNonQueryFromFile(string fileName, params (string ParameterName, object Value)[] parameters)
         {
             using (var connection = new SQLiteConnection(connectionString))
             {
@@ -293,7 +288,7 @@ namespace CustomerManagement
             }
         }
 
-        private List<Dictionary<string, object>> ExecuteQueryFromFile(string fileName, params (string ParameterName, object Value)[] parameters)
+        private static List<Dictionary<string, object>> ExecuteQueryFromFile(string fileName, params (string ParameterName, object Value)[] parameters)
         {
             var results = new List<Dictionary<string, object>>();
 
