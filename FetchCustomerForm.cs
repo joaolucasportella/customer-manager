@@ -87,7 +87,35 @@ namespace CustomerManagement
 
         private void DeleteCustomerClick(object sender, EventArgs e)
         {
+            DialogResult result = MessageBox.Show(
+                text: $"Esta ação é irreversível! Você tem certeza de que deseja continuar?",
+                caption: "Atenção",
+                buttons: MessageBoxButtons.YesNo,
+                icon: MessageBoxIcon.Question
+            );
 
+            if (result == DialogResult.No)
+            {
+                return;
+            }
+
+            DataRow selectedRow = ((DataRowView)searchBox.SelectedItem).Row;
+
+            try
+            {
+                Database.deleteCustomerAndAnamnese(Convert.ToInt16(selectedRow["customerId"].ToString()));
+
+                MessageBox.Show("Cliente removido com successo!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(
+                    text: $"Erro ao tentar remover o cadastro! {ex.Message}",
+                    caption: "Erro",
+                    buttons: MessageBoxButtons.OK,
+                    icon: MessageBoxIcon.Warning
+                );
+            }
         }
 
         private void searchInputTextChanged(object sender, EventArgs e)
