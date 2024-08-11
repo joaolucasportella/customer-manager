@@ -77,7 +77,6 @@
             Name = "MainForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Gerenciador de Clientes";
-            Load += MainLoad;
             ResumeLayout(false);
             PerformLayout();
         }
