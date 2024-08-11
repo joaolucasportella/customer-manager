@@ -11,11 +11,6 @@
             this.database = new Database();
         }
 
-        private void CustomerFormLoad(object sender, EventArgs e)
-        {
-
-        }
-
         private void ReturnToHomePageClick(object sender, EventArgs e)
         {
             this.Close();

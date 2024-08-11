@@ -1638,7 +1638,6 @@
             Name = "RegisterCustomerForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Cadastro de Cliente";
-            Load += CustomerFormLoad;
             ((System.ComponentModel.ISupportInitialize)anamneseIntegerInput1).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
