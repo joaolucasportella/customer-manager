@@ -25,7 +25,7 @@
     <None Update="sql\insertCustomerAndAnamnese.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="sql\updateCustomer.sql">
+    <None Update="sql\updateCustomerAndAnamnese.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
